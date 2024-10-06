@@ -1,0 +1,11 @@
+body{
+    background-color: #000;
+    color: white;
+    margin: 0;
+}
+
+#tester {
+    width: 30px;
+    height: 30px;
+    background-color:  red;
+}
