@@ -8,7 +8,7 @@ function updateCanvasSize(){
     CANVAS.height = CANVAS.getBoundingClientRect().height;
 }
 
-function renderOneLine(colorTrazo, grosorLinea,origenX, origenT, finalX, finalY){
+function renderOneLine(colorTrazo, grosorLinea,origenX, origenY, finalX, finalY){
     CTX.strokeStyle = colorTrazo;
     CTX.lineWidth = grosorLinea;
     CTX.beginPath();
