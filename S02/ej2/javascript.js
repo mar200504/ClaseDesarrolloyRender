@@ -18,11 +18,13 @@ function printCoordinatesInDom(event) {
     mouse_x_dom_element.innerText = x_final_string;
 
     y_coordinates = event.clientY;
-    y_coordinates = y_coordinates.toString;
+    y_coordinates = y_coordinates.toString();
 
     y_final_string = y_base_string + y_coordinates;
     mouse_y_dom_element.innerText = y_final_string;
 
+
+    console.log(x_final_string, y_final_string)
 }
 
 document.addEventListener("mousemove", printCoordinatesInDom);

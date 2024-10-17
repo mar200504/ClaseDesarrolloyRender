@@ -23,7 +23,7 @@ let downloadingImage;
 
 //Definir funcion de dibujo que estaremos repitiendo usando requestAnimationFrame()
 function renderImage(){
-    CTX.clearReact(0, 0, Canvas.width, CANVAS.height);
+    CTX.clearRect(0, 0, CANVAS.width, CANVAS.height);
 
     /*Secuencia de comandos para dibujar una imagen
     1.La imagen debe ser descargada por el navegador paea utilizarse

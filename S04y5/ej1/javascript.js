@@ -22,7 +22,7 @@ function renderRectangle(){
 
     //Dibujo de rectangulo en el CANVAS
     //Sintaxis siendo (x,y,width,height)
-    CTX.fillRect = (10,10,150,100);
+    CTX.fillRect(10,10,150,100);
 }
 
 //Ejecutar codigo

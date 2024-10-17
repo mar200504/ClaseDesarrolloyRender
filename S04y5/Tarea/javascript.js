@@ -44,7 +44,6 @@ let mouseY = 0;
 function updateMouseCoords(eventData) {
     mouseX = eventData.clientX;
     mouseY = eventData.clientY;
-
 }
 
 document.addEventListener("mousemove",updateMouseCoords);
@@ -52,6 +51,7 @@ document.addEventListener("mousemove",updateMouseCoords);
 
 //repetire esto 6 veces creo que sera lo mas sencillo
 //1
+function drawLines(){
  CTX.strokeStyke = "4b1c71";
     CTX.lineWidth = 20;
 
@@ -108,3 +108,8 @@ document.addEventListener("mousemove",updateMouseCoords);
     CTX.lineTo(mouseX, mouseY);
     CTX.closePath();
     CTX.stroke();
+  
+  requestAnimationFrame(drawLines);
+}
+
+requestAnimationFrame(drawLines)
