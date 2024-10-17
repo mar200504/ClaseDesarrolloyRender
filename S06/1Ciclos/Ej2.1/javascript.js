@@ -13,14 +13,14 @@ function updateCanvasSize(){
 function renderCircleRed(x, y) {
     CTX.fillStyle = "#ff0000";
     CTX.beginPath();
-    CTX.ellipse(x, y, 15, 15, 0, 0, PI2)
+    CTX.ellipse(x, y, 15, 15, 0, 0, PI2);
     CTX.fill();
 }
 
-function renderCircleGreen(){
+function renderCircleGreen(x, y) {
     CTX.fillStyle = "#00ff00";
     CTX.beginPath();
-    CTX.ellipse(x, y, 15, 15, 0, 0, PI2)
+    CTX.ellipse(x, y, 15, 15, 0, 0, PI2);
     CTX.fill();
 }
 
