@@ -18,7 +18,7 @@ function renderRectangle(){
     CTX.clearRect(0,0,CANVAS.width,CANVAS.height)
 
     CTX.fillStyle = "aqua";
-    CTX.fillRect = (offsetX, 10, 150, 100);
+    CTX.fillRect(offsetX, 10, 150, 100);
 
     //Calcular la nueva posicion en x con offsetX para que en el siguiente frame tenga una posicon distinta creando movimiento
     offsetX = offsetX + 1;
@@ -29,4 +29,4 @@ function renderRectangle(){
 
 //Ejecutar nuestro codigo
 window.addEventListener("resize", updateCanvasSize);
-requestAnimationFrame
+requestAnimationFrame(renderRectangle)

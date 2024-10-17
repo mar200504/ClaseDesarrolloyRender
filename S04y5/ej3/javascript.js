@@ -48,12 +48,28 @@ function renderCircles(){
     CTX.strokeStyle = "#00FF99";
     CTX.lineWidth = 4;
     CTX.beginPath();
-    CTX.ellipse(circlePos.x1, circlePos.y1, 30, 30, 0, 0, Math.PI);
+    CTX.ellipse(circPos.x1, circPos.y1, 30, 30, 0, 0, Math.PI);
     CTX.closePath();
     CTX.stroke();
 
     CTX.fillStyle = "#ff9900";
     CTX.beginPath();
-    CTX.ellipse(circlePos.x2, circlePos.y2, 15, 15, 0, 0, PI2);
+    CTX.ellipse(circPos.x2, circPos.y2, 15, 15, 0, 0, PI2);
     CTX.fill();
+
+  /*///// 4. Actualizaremos la posición de los círculos antes de llamar renderCircles en el siguiente frame ///*/
+  circPos.x1 = circPos.x1 + speed.x1;
+  circPos.y1 = circPos.y1 + speed.y1;
+  
+  circPos.x2 = circPos.x2 + speed.x2;
+  circPos.y2 = circPos.y2 + speed.y2;
+  
+  
+  requestAnimationFrame(renderCircles);
 }
+
+
+
+/*///// 5. Ejecutar nuestro código ///*/
+window.addEventListener("resize", updateCanvasSize);
+requestAnimationFrame(renderCircles);
