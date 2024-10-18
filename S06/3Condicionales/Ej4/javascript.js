@@ -14,9 +14,9 @@ const DIV = document.getElementById("tester");
 //Crearemos nuestra funcion con la condicion que evaluara el size de la ventana para cambiar el color del borde segun la regla
 function isWindowWideEnough(event){
     if(window.innerWidth >= upperScreenThreshold){
-        DIV.style.borderColor = "blue";
+        DIV.style.borderColor = "#0000ff";
     } else if(window.innerWidth >= screenThreshold){
-        DIV.style.borderColor = "00ff00";
+        DIV.style.borderColor = "#00ff00";
     } else{
         DIV.style.borderColor = "red";
     }
