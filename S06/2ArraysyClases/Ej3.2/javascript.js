@@ -62,11 +62,11 @@ function render() {
 
     //Usamos un ciclo for para leer el array y ejecutar una accion por cada elemento guardado alli.
     //Podemos sincronizar el total de repeticiones con el total de elementos en nuestro array leyendo la cantidad de elementos en nuestra lista usando la propiedad .length. Podemos establecer la condicion de que se ejecute nuestro ciclo siempre y cuando el indice sea menor a la cantidad del elementos en el array
-    for (let i = 0; i , misCirculos.length; i++){
+    for (let i = 0; i < misCirculos.length; i++) {
         misCirculos[i].draw();
-    }
 
     circulo1.draw();
+    }
 
     requestAnimationFrame(render);
 

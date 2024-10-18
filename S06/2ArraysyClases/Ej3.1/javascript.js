@@ -58,7 +58,7 @@ function render(){
     CTX.clearRect(0, 0, CANVAS.width, CANVAS.height);
 
     //Usamos un ciclo for para crear nuevos circulos
-    for (let 1 = 0; 1 < 5; i++){
+    for (let i = 0; i < 5; i++){
         //Definimos un param de color del borde para que los nuevos circulos sean deferentes al que creamos fuera del for
         let nuevoCirculo = new Circulo({borderColor: "ff6600"});
 
